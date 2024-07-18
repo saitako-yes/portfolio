@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオサイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="book">
+        <div class="cover">
+            <h1>portfolio</h1>
+            <h2>SAI　TAKO</h2>
+            <button onclick="goToPage(1)" class="open-book">OPEN</button>
+        </div>
+        <div class="page" id="page-1">
+            <h3>自己紹介</h3>
+            <p>
+                氏名　サイ　タコ<br>
+                00月00日生まれ<br>
+                ○○大学○年生○○学部○○専攻<br>
+                映像の作成、プログラミング、3DCGのモデリングなどを中心に学んできました。
+            </p>
+            <div class="nav-buttons">
+                <button class="nav-button prev" onclick="goToPage(0)">閉じる</button>
+                <button class="nav-button next" onclick="goToPage(2)">次へ</button>
+            </div>
+        </div>
+        <div class="page" id="page-2">
+            <h3>スキル</h3>
+            <ul>
+                <li>プログラミング　C言語　Python C++</li>
+                <li>デザイン基礎</li>
+                <li>写真撮影</li>
+                <li>3DCG(MAYA)</li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="nav-button prev" onclick="goToPage(1)">前へ</button>
+                <button class="nav-button next" onclick="goToPage(3)">次へ</button>
+            </div>
+        </div>
+        <div class="page" id="page-3">
+            <h3>参加したプロジェクト</h3>
+            <div class="project">
+                <h4>ゲーム開発</h4>
+                <p>合計４名によるプロジェクトで、私はゲームシステムとシナリオライターとして活躍しました。</p>
+            </div>
+            <div class="project">
+                <h4>プロジェクションマッピング作成</h4>
+                <p>合計７名による合同プロジェクトで、コミュニケーションの難しさを実感しました。</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-button prev" onclick="goToPage(2)">前へ</button>
+                <button class="nav-button next" onclick="goToPage(4)">次へ</button>
+            </div>
+        </div>
+        <div class="page" id="page-4">
+            <h3>作品1　可視光線のポスター</h3>
+            <p>
+                使用ソフト　illustrator　　作成期間　2日<br>illustratorに慣れた頃に作った作品色のグラデーションを作るときに様々な資料を読みました。グラデーションを見た資料と数値が同じようになるように丁寧に作りました。
+            </p>
+            <img src="img/postar.jpg" alt="postar">
+            <div class="nav-buttons">
+                <button class="nav-button prev" onclick="goToPage(3)">前へ</button>
+                <button class="nav-button next" onclick="goToPage(5)">次へ</button>
+            </div>
+        </div>
+        <div class="page" id="page-5">
+            <h3>作品2　光の三原色</h3>
+            <p>
+                使用ソフト　illustrator　　作成期間　2日<br>作品１を作った時のノウハウを使いさらに洗練された作品です。また工夫して作ったライトは、自信作です。また光の三原色をわかりやすくするために背景を黒くしました。
+            </p>
+            <img src="img/postar2.jpg" alt="postar2">
+            <div class="nav-buttons">
+                <button class="nav-button prev" onclick="goToPage(4)">前へ</button>
+                <button class="nav-button next" onclick="goToPage(6)">次へ</button>
+            </div>
+        </div>
+        <div class="page" id="page-6">
+            <h3>作品3　写真撮影</h3>
+            <p>使用ソフト　aftereffect　　作成期間　2週間<br>夕暮れが愛おしい写真です。aftereffectを使用し色彩を編集して美しい写真に仕上げました。中心に夕日が来る等に調整し人々の視線をコントロールできるように工夫しました</p>
+            <img src="img/ppp.jpg" alt="ppp">
+            <div class="nav-buttons">
+                <button class="nav-button prev" onclick="goToPage(5)">前へ</button>
+                <button class="nav-button next" onclick="goToPage(7)">次へ</button>
+            </div>
+        </div>
+        <div class="page" id="page-7">
+            <h3>あとがき</h3>
+            <p>ここまでご覧になっていただきありがとうございます。<br>これからも様々な視点から作品を想像したりスキルアップしたりと頑張っていきます！</p>
+            <h3>お問い合わせ</h3>
+            <p>Email: example@example.com</p>
+            <div class="nav-buttons">
+                <button class="nav-button prev" onclick="goToPage(6)">前へ</button>
+                <button class="nav-button next" onclick="goToPage(0)">閉じる</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
