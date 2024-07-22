@@ -8,6 +8,10 @@ body
     height: 100vh;
     margin: 0;
 }
+.page>img
+{
+    width: 80px;
+}
 .cover h1, .cover h2 
 {
     opacity: 0;
